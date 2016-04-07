@@ -149,5 +149,12 @@ jQuery(document).ready(function ($) {
         );
     }
 
+    // Homepage news ticker
+	jQuery('.home-ticker').innerfade({
+	    animationtype: 'fade',
+	    speed: 500,
+	    timeout: 7000,
+	    type: 'sequence',
+	});
 
 }); /* end of as page load scripts */
