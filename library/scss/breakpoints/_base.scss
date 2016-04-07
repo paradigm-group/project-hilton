@@ -21,7 +21,7 @@ body {
 	line-height: 1.5;
 	color: $text-color;
 	background-color: $body-bg;
-  -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 
 /********************
@@ -64,15 +64,6 @@ style a page via class
 .logged-in {}                     /* if user is logged in */
 .paged {}                         /* paged items like search results or archives */
 	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
-
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-
-.wrap {
-	width: 96%;
-	margin: 0 auto;
-}
 
 /*********************
 LINK STYLES
@@ -153,15 +144,12 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 
-.header {
-	background-color: $header-bg;
-}
+.header {}
 
 	#logo {
 		margin: 0;
 
-		a {
-		}
+		a {}
 	}
 
 /*********************

@@ -1157,7 +1157,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #000807;
-  background-color: #eaedf2;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased; }
 
 /********************
@@ -1199,13 +1199,6 @@ style a page via class
 /* if user is logged in */
 /* paged items like search results or archives */
 /* individual paged (i.e. body.paged-3) */
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-.wrap {
-  width: 96%;
-  margin: 0 auto; }
-
 /*********************
 LINK STYLES
 *********************/
@@ -1265,9 +1258,6 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-.header {
-  background-color: #fff; }
-
 #logo {
   margin: 0; }
 
@@ -1845,7 +1835,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #000807;
+  background-color: #9a031e;
   color: #f8f9fa; }
 
 /*
