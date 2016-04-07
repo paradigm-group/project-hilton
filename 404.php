@@ -1,50 +1,43 @@
-<?php
-/**
- * The template for displaying 404 pages (Not Found).
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+    <div id="content" class="wrapper">
 
-	<div id="primary">
-		<div id="content" role="main">
+        <div id="inner-content" class="container">
 
-			<article id="post-0" class="post error404 not-found">
-				<header class="entry-header">
-					<h1 class="entry-title"><?php _e( '404 Not Found', 'twentyeleven' ); ?></h1>
-				</header>
+            <div class="main"  role="main">
 
-				<div class="entry-content">
-					<p><?php //_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help.', 'twentyeleven' ); ?></p>
-					<?php get_search_form(); ?>
-					
-					<?php /*
+                <article id="post-not-found" class="hentry">
 
-					<?php the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 10 ), array( 'widget_id' => '404' ) ); ?>
+                    <header class="article-header">
 
-					<div class="widget">
-						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'twentyeleven' ); ?></h2>
-						<ul>
-						<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'number' => 10 ) ); ?>
-						</ul>
-					</div>
+                        <h1><?php _e( '404 - Article Not Found', 'guybrush' ); ?></h1>
 
-					<?php
-					/* translators: %1$s: smilie 
-					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'twentyeleven' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', array('count' => 0 , 'dropdown' => 1 ), array( 'after_title' => '</h2>'.$archive_content ) );
-					?>
+                    </header>
 
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-					*/ ?>
+                    <div class="entry-content">
 
-				</div><!-- .entry-content -->
-			</article><!-- #post-0 -->
+                        <p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'bonestheme' ); ?></p>
 
-		</div><!-- #content -->
-	</div><!-- #primary -->
+                    </div>
+
+                    <div class=" entry-content search">
+
+                            <p><?php get_search_form(); ?></p>
+
+                    </div>
+
+                    <footer class="article-footer">
+
+                            <p><?php _e( 'This is the 404.php template.', 'bonestheme' ); ?></p>
+
+                    </footer>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
 
 <?php get_footer(); ?>

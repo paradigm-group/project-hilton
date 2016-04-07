@@ -1,0 +1,59 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Layout Stylesheet
+******************************************************************/
+.wrapper {
+	@include clearfix;
+	max-width: $break-wide;
+	//min-width: ($break-mobile - 20px);
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+	@include clearfix;
+	width: 100%;
+}
+
+#container {}
+
+  .header {}
+
+    #inner-header {}
+
+      .logo-container {
+        @include grid(4);
+        @include break(tablet, 12);
+        @include break(mobile, 12);
+      }
+
+      #sidebar-header {
+        @include grid(4, $push:4);
+        @include break(tablet, 12);
+        @include break(mobile, 12);
+      }
+  .nav {}
+
+  #content {}
+
+    #inner-content {}
+
+      .full {
+        @include grid (12);
+      }
+
+      #main, .main {
+        @include grid(8);
+        @include break(tablet, 12);
+        @include break(mobile, 12);
+      }
+
+       .sidebar {
+        @include grid(4);
+        @include break(tablet, 12);
+        @include break(mobile, 12);
+       }
+
+  .footer {}

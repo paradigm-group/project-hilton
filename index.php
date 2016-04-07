@@ -1,52 +1,60 @@
-<?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+    <div id="content" class="wrapper">
 
-		<div id="primary">
-			<div id="content" role="main">
+        <div id="inner-content" class="container">
 
-			<?php if ( have_posts() ) : ?>
+            <div class="main" role="main">
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-					<?php get_template_part( 'content', get_post_format() ); ?>
 
-				<?php endwhile; ?>
+                        <header class="article-header">
 
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
+                            <h1 class="entry-title single-title" itemprop="headline">
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                            </h1>
 
-			<?php else : ?>
+                            <p class="byline vcard">Posted <?php echo get_the_time(get_option('date_format'));?> by <?php echo get_the_author_meta( 'display_name' );?></p>
 
-				<article id="post-0" class="post no-results not-found">
-					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
-					</header><!-- .entry-header -->
+                        </header> <?php // end article header ?>
 
-					<div class="entry-content">
-						<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyeleven' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
+                        <div class="entry-content" itemprop="articleBody">
+                          <?php
+                            // the content (pretty self explanatory huh)
+                            the_content();
+                          ?>
+                        </div> <?php // end article section ?>
 
-			<?php endif; ?>
+                        <footer class="article-footer">
 
-			</div><!-- #content -->
-		</div><!-- #primary -->
+                            <?php printf( __( 'Filed under: %1$s', 'guybrush' ), get_the_category_list(', ') ); ?>
 
-<?php get_sidebar(); ?>
+                            <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+                        </footer> <?php // end article footer ?>
+
+                    <?php comments_template(); ?>
+
+                </article> <?php // end article ?>
+
+            <?php endwhile; ?>
+
+                <?php bones_page_navi(); ?>
+
+            <?php else : ?>
+
+                <?php get_template_part ('partials/no-post-found');?>
+
+            <?php endif; ?>
+
+            </div>
+
+            <?php get_sidebar(); ?>
+
+        </div>
+
+    </div>
+
 <?php get_footer(); ?>

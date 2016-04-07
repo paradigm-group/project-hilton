@@ -1,72 +1,98 @@
-<?php
-/**
- * The template for displaying Archive pages.
- *
- * Used to display archive-type pages if nothing more specific matches a query.
- * For example, puts together date-based pages if no date.php file exists.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
- */
+<?php get_header(); ?>
 
-get_header(); ?>
+    <div id="content" class="wrapper">
 
-		<section id="primary">
-			<div id="content" role="main">
+        <div id="inner-content" class="container">
 
-			<?php if ( have_posts() ) : ?>
+            <div class="main" role="main">
 
-				<header class="page-header">
-					<h1 class="page-title">
-						<?php if ( is_day() ) : ?>
-							<?php printf( __( 'Daily Archives: %s', 'twentyeleven' ), '<span>' . get_the_date() . '</span>' ); ?>
-						<?php elseif ( is_month() ) : ?>
-							<?php printf( __( 'Monthly Archives: %s', 'twentyeleven' ), '<span>' . get_the_date( 'F Y' ) . '</span>' ); ?>
-						<?php elseif ( is_year() ) : ?>
-							<?php printf( __( 'Yearly Archives: %s', 'twentyeleven' ), '<span>' . get_the_date( 'Y' ) . '</span>' ); ?>
-						<?php else : ?>
-							<?php _e( 'Blog Archives', 'twentyeleven' ); ?>
-						<?php endif; ?>
-					</h1>
-				</header>
+            <?php if (is_category()) { ?>
+                <h1 class="archive-title">
+                    <span><?php _e( 'Posts Categorized:', 'guybrush' ); ?></span> <?php single_cat_title(); ?>
+                </h1>
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
+            <?php } elseif (is_tag()) { ?>
+                <h1 class="archive-title">
+                    <span><?php _e( 'Posts Tagged:', 'guybrush' ); ?></span> <?php single_tag_title(); ?>
+                </h1>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+            <?php } elseif (is_author()) {
+                global $post;
+                $author_id = $post->post_author;
+            ?>
+                <h1 class="archive-title">
 
-					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
-					?>
+                    <span><?php _e( 'Posts By:', 'guybrush' ); ?></span> <?php the_author_meta('display_name', $author_id); ?>
 
-				<?php endwhile; ?>
+                </h1>
+            <?php } elseif (is_day()) { ?>
+                <h1 class="archive-title">
+                    <span><?php _e( 'Daily Archives:', 'guybrush' ); ?></span> <?php the_time('l, F j, Y'); ?>
+                </h1>
 
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
+            <?php } elseif (is_month()) { ?>
+                    <h1 class="archive-title">
+                        <span><?php _e( 'Monthly Archives:', 'guybrush' ); ?></span> <?php the_time('F Y'); ?>
+                    </h1>
 
-			<?php else : ?>
+            <?php } elseif (is_year()) { ?>
+                    <h1 class="archive-title">
+                        <span><?php _e( 'Yearly Archives:', 'guybrush' ); ?></span> <?php the_time('Y'); ?>
+                    </h1>
+            <?php } ?>
 
-				<article id="post-0" class="post no-results not-found">
-					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
-					</header><!-- .entry-header -->
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<div class="entry-content">
-						<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'twentyeleven' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
+                <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
-			<?php endif; ?>
+                    <header class="article-header">
 
-			</div><!-- #content -->
-		</section><!-- #primary -->
+                        <h1 class="entry-title">
+                            <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h1>
 
-<?php get_sidebar(); ?>
+                        <p class="byline vcard">Posted <?php echo get_the_time(get_option('date_format'));?> by <?php echo get_the_author_meta( 'display_name' );?></p>
+
+                    </header>
+
+                    <div class="entry-content">
+
+                        <?php the_post_thumbnail('thumbnail', array('class' => 'alignleft')); ?>
+
+                        <?php the_excerpt(); ?>
+
+                    </div>
+
+                    <footer class="article-footer">
+
+                      <?php get_template_part ('partials/comment-count'); ?>
+
+                      <?php printf( '<p class="footer-category">' . __('Filed under', 'bonestheme' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
+
+                      <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+
+                    </footer>
+
+                </article>
+
+            <?php endwhile; ?>
+
+                    <?php bones_page_navi(); ?>
+
+            <?php else : ?>
+
+                <?php get_template_part ('partials/no-post-found');?>
+
+            <?php endif; ?>
+
+            </div>
+
+            <?php get_sidebar(); ?>
+
+        </div>
+
+    </div>
+
 <?php get_footer(); ?>

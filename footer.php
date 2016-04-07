@@ -1,37 +1,32 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the id=main div and all content after
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
- */
-?>
+			<footer class="footer" role="contentinfo">
 
-	</div><!-- #main -->
+				<div id="inner-footer" class="wrapper">
 
-	<footer id="colophon" class="cf footer" role="contentinfo">
+                    <nav role="navigation">
+                        <?php wp_nav_menu(array(
+                            'container' => '',                              // remove nav container
+                            'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
+                            'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
+                            'menu_class' => 'nav footer-nav cf',            // adding custom nav class
+                            'theme_location' => 'footer-links',             // where it's located in the theme
+                            'before' => '',                                 // before the menu
+                            'after' => '',                                  // after the menu
+                            'link_before' => '',                            // before each link
+                            'link_after' => '',                             // after each link
+                            'depth' => 0,                                   // limit the depth of the nav
+                            'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
+                        )); ?>
+                    </nav>
 
-        <?php
-            /* A sidebar in the footer? Yep. You can can customize
-             * your footer with three columns of widgets.
-             */
-            get_sidebar( 'footer' );
-        ?>
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+				</div>
 
-<?php 
-    // do not display the admin-bar 
-    // & other admin-related objects
-    if (!current_user_can('subscriber')) {
-	wp_footer();
-    } ?>
+			</footer>
 
-<span id="logoutButton"><?php echo wp_logout_url(); ?></span>
+		<?php // all js scripts are loaded in library/bones.php ?>
+		<?php wp_footer(); ?>
 
-</body>
-</html>
+	</body>
+
+</html> <!-- end of site. what a ride! -->
