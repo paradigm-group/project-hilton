@@ -1502,6 +1502,9 @@ POSTS & CONTENT STYLES
   border-radius: 1em;
   border: 5px solid #4d5057;
   text-align: center; }
+  .news-ticker .news-title {
+    color: #fff;
+    font-weight: 700; }
 
 /******************************************************************
 POST FORMATS
