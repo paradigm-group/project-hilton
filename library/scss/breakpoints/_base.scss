@@ -165,7 +165,14 @@ and more scalable.
 */
 
 nav {
-  background-color: $nav-bg;
+    background: $dark-grey;
+    background: -moz-linear-gradient(top,$dark-grey 0,#99a5b5 50%,#8c9aaa 51%,#8a9aab 100%);
+    background: -webkit-gradient(left top,left bottom,color-stop(0,$dark-grey),color-stop(50%,#99a5b5),color-stop(51%,#8c9aaa),color-stop(100%,#8a9aab));
+    background: -webkit-linear-gradient(top,$dark-grey 0,#99a5b5 50%,#8c9aaa 51%,#8a9aab 100%);
+    background: -o-linear-gradient(top,$dark-grey 0,#99a5b5 50%,#8c9aaa 51%,#8a9aab 100%);
+    background: -ms-linear-gradient(top,$dark-grey 0,#99a5b5 50%,#8c9aaa 51%,#8a9aab 100%);
+    background: linear-gradient(to bottom,$dark-grey 0,#99a5b5 50%,#8c9aaa 51%,#8a9aab 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$dark-grey', endColorstr='#8a9aab', GradientType=0);
 }
 
 .nav {
