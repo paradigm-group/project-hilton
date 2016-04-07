@@ -609,6 +609,11 @@ POSTS & CONTENT STYLES
         color:#fff;
         font-weight:700;
         font-size:1.25em;
+
+        li {
+            min-height: 100%;
+            min-width: 100%;
+        }
     }
 }
 
