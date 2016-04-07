@@ -710,6 +710,13 @@ Stylesheet: Layout Stylesheet
       width: 100%;
       margin: 1%; } }
 
+.news-ticker {
+  float: left;
+  width: 100%;
+  margin-right: 2%; }
+  .news-ticker:last-child {
+    margin-right: 0; }
+
 .sidebar {
   float: left;
   width: 23.5%;
