@@ -50,10 +50,6 @@ Stylesheet: Layout Stylesheet
         @include break(mobile, 12);
       }
 
-.news-ticker {
-    @include grid (12);
-}
-
        .sidebar {
         @include grid(3);
         @include break(tablet, 12);

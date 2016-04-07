@@ -597,6 +597,7 @@ POSTS & CONTENT STYLES
 	}
 
 .news-ticker{
+    @include clearfix;
     color: #fff;
     background-color: $red;
     margin: 1em 0;

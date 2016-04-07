@@ -710,13 +710,6 @@ Stylesheet: Layout Stylesheet
       width: 100%;
       margin: 1%; } }
 
-.news-ticker {
-  float: left;
-  width: 100%;
-  margin-right: 2%; }
-  .news-ticker:last-child {
-    margin-right: 0; }
-
 .sidebar {
   float: left;
   width: 23.5%;
@@ -1509,6 +1502,10 @@ POSTS & CONTENT STYLES
   border-radius: 1em;
   border: 5px solid #4d5057;
   text-align: center; }
+  .news-ticker:after {
+    content: "";
+    display: table;
+    clear: both; }
   .news-ticker .news-title {
     color: #fff;
     font-weight: 700;
