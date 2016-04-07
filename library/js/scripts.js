@@ -154,7 +154,7 @@ jQuery(document).ready(function ($) {
 	    animationtype: 'fade',
 	    speed: 500,
 	    timeout: 7000,
-	    type: 'sequence',
+	    type: 'sequence'
 	});
 
 }); /* end of as page load scripts */
