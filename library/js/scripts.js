@@ -150,7 +150,7 @@ jQuery(document).ready(function ($) {
     }
 
     // Homepage news ticker
-	jQuery('.home-ticker').innerfade({
+	$('.home-ticker').innerfade({
 	    animationtype: 'fade',
 	    speed: 500,
 	    timeout: 7000,
