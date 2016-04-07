@@ -8,8 +8,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var minifyCSS = require('gulp-minify-css');
-var imagemin = require('gulp-imagemin');
+var cleanCSS = require('gulp-clean-css');
 
 // Lint Task
 gulp.task('lint', function () {
@@ -25,7 +24,7 @@ gulp.task('sass', function () {
     return gulp.src('library/scss/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('library/css'))
-        .pipe(minifyCSS())
+        .pipe(cleanCSS())
         .pipe(rename('style.min.css'))
         .pipe(gulp.dest('library/css'));
 });
@@ -38,13 +37,6 @@ gulp.task('scripts', function () {
         .pipe(concat('scripts.js'))
         .pipe(rename('scripts.min.js'))
         .pipe(gulp.dest('library/js/min'));
-});
-
-gulp.task('images', function () {
-    "use strict";
-    return gulp.src('library/images/*')
-        .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-        .pipe(gulp.dest('library/images'));
 });
 
 gulp.task('watch', function () {
