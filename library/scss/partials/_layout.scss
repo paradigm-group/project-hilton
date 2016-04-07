@@ -45,13 +45,13 @@ Stylesheet: Layout Stylesheet
       }
 
       #main, .main {
-        @include grid(8);
+        @include grid(9);
         @include break(tablet, 12);
         @include break(mobile, 12);
       }
 
        .sidebar {
-        @include grid(4);
+        @include grid(3);
         @include break(tablet, 12);
         @include break(mobile, 12);
        }

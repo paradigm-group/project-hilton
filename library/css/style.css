@@ -696,7 +696,7 @@ Stylesheet: Layout Stylesheet
 
 #main, .main {
   float: left;
-  width: 66%;
+  width: 74.5%;
   margin-right: 2%; }
   #main:last-child, .main:last-child {
     margin-right: 0; }
@@ -712,7 +712,7 @@ Stylesheet: Layout Stylesheet
 
 .sidebar {
   float: left;
-  width: 32%;
+  width: 23.5%;
   margin-right: 2%; }
   .sidebar:last-child {
     margin-right: 0; }
@@ -1504,7 +1504,8 @@ POSTS & CONTENT STYLES
   text-align: center; }
   .news-ticker .news-title {
     color: #fff;
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 1.25em; }
 
 /******************************************************************
 POST FORMATS

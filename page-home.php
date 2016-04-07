@@ -48,9 +48,9 @@
                     )); ?>
                 </div>
             </div>
-            <div class="beat-container">
+            <div class="sidebar">
                 <a href="/pulse">
-                    <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="250" class="aligncenter">
+                    <img src="<?php echo get_template_directory_uri();?>/library/images/pulse.png" width="250" class="aligncenter">
                 </a>
                 <div class="beat">
                     <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 3 ) ); ?>
