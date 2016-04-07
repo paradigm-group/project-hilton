@@ -1158,19 +1158,7 @@ body {
   line-height: 1.5;
   color: #000807;
   background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column; }
-
-#content {
-  flex: 1; }
-
-#inner-content {
-  display: flex; }
-
-.main {
-  flex: 1; }
+  -webkit-font-smoothing: antialiased; }
 
 /********************
 WORDPRESS BODY CLASSES

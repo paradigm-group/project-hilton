@@ -22,21 +22,6 @@ body {
 	color: $text-color;
 	background-color: $body-bg;
     -webkit-font-smoothing: antialiased;
-    display: flex;
-    min-height:100vh;
-    flex-direction: column;
-}
-
-#content {
-    flex:1;
-}
-
-#inner-content {
-    display:flex;
-}
-
-.main {
-    flex:1;
 }
 
 /********************
