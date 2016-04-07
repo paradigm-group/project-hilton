@@ -129,14 +129,10 @@
 
         else { // if it isn't the home page
 
-          if(function_exists('bcn_display')) { // and the breadcrumb functions exists ?>
-
-            <div class="breadcrumbs">
-                <?php bcn_display(); //do breadcrumbs ?>
-            </div>
-
-          <?php }
+            if ( function_exists('yoast_breadcrumb') )  {
+                yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+            } ?>
         } ?>
 	</header><!-- #branding -->
 
-<div id="main" class="cf<?php echo (get_post_type()=='post'? ' blog':''); ?>">
+<div id="main" class="cf <?php echo (get_post_type()=='post'? ' blog':''); ?>">
