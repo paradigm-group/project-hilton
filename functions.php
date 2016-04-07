@@ -1200,3 +1200,11 @@ function hub_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'hub_scripts' );
+
+/* /custom-post-types.php
+	- Employees
+	- Companies
+	- Specialities
+    - Pulse
+*/
+require_once( 'custom-post-type.php' ); // you can disable this if you like
