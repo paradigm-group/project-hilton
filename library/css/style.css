@@ -1281,13 +1281,13 @@ nav {
   background: linear-gradient(to bottom, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#acb9c8', endColorstr='#8a9aab', GradientType=0); }
 
-.nav {
+.top-nav {
   margin: 0;
   border: 2px solid #4d5057;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav li {
+  .top-nav li {
     /*
 		so you really have to rethink your dropdowns for mobile.
 		you don't want to have it expand too much because the
@@ -1295,7 +1295,7 @@ nav {
 		depend on the project. Here's some great info on it:
 		http://www.alistapart.com/articles/organizing-mobile/
 		*/ }
-    .nav li a {
+    .top-nav li a {
       display: block;
       color: #fff;
       text-decoration: none;
@@ -1307,15 +1307,15 @@ nav {
 			the style.scss file where it's relevant. We want to
 			keep this file as small as possible!
 			*/ }
-    .nav li ul.sub-menu,
-    .nav li ul.children {
+    .top-nav li ul.sub-menu,
+    .top-nav li ul.children {
       display: none;
       margin: 0 auto; }
-      .nav li ul.sub-menu li,
-      .nav li ul.children li {
+      .top-nav li ul.sub-menu li,
+      .top-nav li ul.children li {
         width: 100%; }
-        .nav li ul.sub-menu li a,
-        .nav li ul.children li a {
+        .top-nav li ul.sub-menu li a,
+        .top-nav li ul.children li a {
           background-color: #f8f9fa;
           color: #016c91; }
 
