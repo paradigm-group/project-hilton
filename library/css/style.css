@@ -1166,6 +1166,12 @@ body {
 #content {
   flex: 1; }
 
+#inner-content {
+  display: flex; }
+
+.main {
+  flex: 1; }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
