@@ -1279,11 +1279,11 @@ nav {
   background: -o-linear-gradient(top, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
   background: -ms-linear-gradient(top, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
   background: linear-gradient(to bottom, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#acb9c8', endColorstr='#8a9aab', GradientType=0);
-  border: 2px solid #4d5057; }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#acb9c8', endColorstr='#8a9aab', GradientType=0); }
 
 .nav {
   margin: 0;
+  border: 2px solid #4d5057;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
