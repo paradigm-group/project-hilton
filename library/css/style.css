@@ -1272,14 +1272,14 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 nav {
-  background: #4d5057;
-  background: -moz-linear-gradient(top, #4d5057 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0, #4d5057), color-stop(50%, #99a5b5), color-stop(51%, #8c9aaa), color-stop(100%, #8a9aab));
-  background: -webkit-linear-gradient(top, #4d5057 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
-  background: -o-linear-gradient(top, #4d5057 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
-  background: -ms-linear-gradient(top, #4d5057 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
-  background: linear-gradient(to bottom, #4d5057 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$dark-grey', endColorstr='#8a9aab', GradientType=0); }
+  background: #acb9c8;
+  background: -moz-linear-gradient(top, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0, #acb9c8), color-stop(50%, #99a5b5), color-stop(51%, #8c9aaa), color-stop(100%, #8a9aab));
+  background: -webkit-linear-gradient(top, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
+  background: -o-linear-gradient(top, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
+  background: -ms-linear-gradient(top, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
+  background: linear-gradient(to bottom, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#acb9c8', endColorstr='#8a9aab', GradientType=0); }
 
 .nav {
   margin: 0;
