@@ -1207,4 +1207,4 @@ add_action( 'wp_enqueue_scripts', 'hub_scripts' );
 	- Specialities
     - Pulse
 */
-require_once( 'custom-post-type.php' ); // you can disable this if you like
+require_once( 'custom-post-types.php' ); // you can disable this if you like
