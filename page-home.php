@@ -47,23 +47,22 @@
                         'fallback_cb' => ''                             // fallback function (if there is one)
                     )); ?>
                 </div>
+            </div>
+            <div class="beat-container">
+                <a href="/pulse">
+                    <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="250" class="aligncenter">
+                </a>
+                <div class="beat">
+                    <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 3 ) ); ?>
+                    <?php if($loop->have_posts()): ?>
+                        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                            <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="beat-date"><?php the_date(); ?></span></h2>
+                            <div class="beat-excerpt"><?php the_excerpt(); ?></div>
+                        <?php endwhile; ?>
 
-                <div class="beat-container">
-                    <a href="/pulse">
-                        <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="250" class="aligncenter">
-                    </a>
-                    <div class="beat">
-                        <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 3 ) ); ?>
-                        <?php if($loop->have_posts()): ?>
-                            <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                                <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="beat-date"><?php the_date(); ?></span></h2>
-                                <div class="beat-excerpt"><?php the_excerpt(); ?></div>
-                            <?php endwhile; ?>
-
-                        <?php else : ?>
-                            <h2 class="beat-title soon">Coming soon!</h2>
-                        <?php endif; ?>
-                    </div>
+                    <?php else : ?>
+                        <h2 class="beat-title soon">Coming soon!</h2>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
