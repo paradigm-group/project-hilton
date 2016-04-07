@@ -1502,7 +1502,7 @@ POSTS & CONTENT STYLES
   border-radius: 1em;
   border: 5px solid #4d5057;
   text-align: center; }
-  .news-ticker:after {
+  .news-ticker .home-ticker:after {
     content: "";
     display: table;
     clear: both; }
