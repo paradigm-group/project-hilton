@@ -1494,6 +1494,15 @@ POSTS & CONTENT STYLES
 .tags {
   margin: 0; }
 
+.news-ticker {
+  color: #fff;
+  background-color: #9a031e;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 1em;
+  border: 5px solid #4d5057;
+  text-align: center; }
+
 /******************************************************************
 POST FORMATS
 ******************************************************************/

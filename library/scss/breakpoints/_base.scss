@@ -596,6 +596,16 @@ POSTS & CONTENT STYLES
 		margin: 0;
 	}
 
+.news-ticker{
+    color: #fff;
+    background-color: $red;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 1em;
+    border: 5px solid $dark-grey;
+    text-align:center;
+}
+
 /******************************************************************
 POST FORMATS
 ******************************************************************/

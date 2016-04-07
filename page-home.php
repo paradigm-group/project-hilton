@@ -21,7 +21,7 @@
 
             <div class="main"  role="main">
 
-                <div class="newsticker cf">
+                <div class="news-ticker">
                     <?php $loop = new WP_Query( array( 'post_type' => 'group-news', 'posts_per_page' => 2 ) ); ?>
                     <?php if($loop->have_posts()): ?>
                     <ul class="home-ticker">
