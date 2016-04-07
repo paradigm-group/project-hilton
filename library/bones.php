@@ -127,7 +127,10 @@ function bones_scripts_and_styles() {
   if (!is_admin()) {
 
 		// modernizr (without media query polyfill)
-		wp_register_script( 'buybrush-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+		wp_register_script( 'guybrush-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+
+        // innerfade
+		wp_register_script( 'ph-innerfade', get_stylesheet_directory_uri() . '/library/js/libs/innerfade.js', array(), '2.5.3', false );
 
 		// register main stylesheet
 		wp_register_style( 'guybrush-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.min.css', array(), '', 'all' );
@@ -149,8 +152,10 @@ function bones_scripts_and_styles() {
 
         // enqueue scripts
 		wp_enqueue_script( 'jquery' );
+        wp_enqueue_script( 'ph-innerfade' );
 		wp_enqueue_script( 'guybrush-js' );
         wp_enqueue_script( 'guybrush-modernizr' );
+
 
           // comment reply script for threaded comments
         if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
