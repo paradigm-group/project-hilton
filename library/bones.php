@@ -138,7 +138,7 @@ function bones_scripts_and_styles() {
 		// ie-only style sheet
 		wp_register_style( 'guybrush-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 
-        wp_register_style('google-fonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+        wp_register_style('google-fonts', 'http://fonts.googleapis.com/css?family=Alfa+Slab+One');
 
 		//adding scripts file in the footer
 		wp_register_script( 'guybrush-js', get_stylesheet_directory_uri() . '/library/js/min/scripts.min.js', array( 'jquery' ), '', true );
