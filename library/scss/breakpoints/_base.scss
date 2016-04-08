@@ -609,6 +609,8 @@ POSTS & CONTENT STYLES
 
     .home-ticker {
         @include clearfix;
+        height:90px;
+        margin:0 auto;
     }
 
     .news-title{
