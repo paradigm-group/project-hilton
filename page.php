@@ -27,7 +27,7 @@
 
                     <footer class="article-footer">
 
-                        <?php get_template_part('partials/sub-page.php');?>
+                        <?php get_template_part ('partials/subpages');?>
 
                     </footer> <?php // end article footer ?>
 
