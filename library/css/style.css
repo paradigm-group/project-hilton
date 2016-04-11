@@ -1403,6 +1403,24 @@ and more scalable.
   border: 5px solid #9a031e;
   box-shadow: 0 0 15px #000; }
 
+.menu-image {
+  margin: .25em auto 1.25em;
+  display: block; }
+
+.home-nav li a {
+  width: 219px;
+  height: 190px;
+  text-transform: uppercase;
+  color: #fff; }
+
+.home-nav li a span {
+  background-color: #d41246;
+  position: absolute;
+  width: 219px;
+  line-height: 2em;
+  bottom: 0;
+  left: 0; }
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
