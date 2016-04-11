@@ -393,21 +393,24 @@ nav {
 }
 
 .menu-image {
-        margin: .25em auto 1.25em;
+    margin: .25em auto 1.25em;
     display: block;
 }
 
-.home-nav li a {    width: 219px;
+.home-nav li a {
+    width: 219px;
     height: 190px;
     text-transform: uppercase;
     color: #fff;
 }
-.home-nav li a span {    background-color: #d41246;
+.home-nav li a span {
+    background-color: $red;
     position: absolute;
     width: 219px;
     line-height: 2em;
     bottom: 0;
-    left: 0;}
+    left: 0;
+}
 
 /*********************
 POSTS & CONTENT STYLES
