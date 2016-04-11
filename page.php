@@ -64,7 +64,6 @@
 					<?php
 				    }
 				?>
-                        ?>
 
                     </footer> <?php // end article footer ?>
 
