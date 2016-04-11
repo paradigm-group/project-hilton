@@ -404,12 +404,15 @@ nav {
     color: #fff;
 }
 .home-nav li a span {
-    background-color: $red;
+    background-color: #9a031e;
     position: absolute;
     width: 219px;
     line-height: 2em;
     bottom: 0;
     left: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.75em;
 }
 
 /*********************

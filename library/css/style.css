@@ -1419,7 +1419,10 @@ and more scalable.
   width: 219px;
   line-height: 2em;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.75em; }
 
 /*********************
 POSTS & CONTENT STYLES
