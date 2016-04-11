@@ -1427,18 +1427,11 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-.hentry {
-  background-color: #fff;
-  border-radius: 3px;
-  border: 1px solid #ccc; }
-  .hentry header {
-    border-bottom: 1px solid #f8f9fa;
-    padding: 1.5em; }
-  .hentry footer {
-    padding: 1.5em;
-    border-top: 1px solid #f8f9fa; }
-    .hentry footer p {
-      margin: 0; }
+.hentry header {
+  padding: 1.5em; }
+
+.hentry footer p {
+  margin: 0; }
 
 /* end .hentry */
 .single-title,
