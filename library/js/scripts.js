@@ -155,7 +155,7 @@ jQuery(document).ready(function ($) {
 	    speed: 500,
 	    timeout: 7000,
 	    type: 'sequence',
-        containerheight : '50px'
+        containerheight : '25px'
 	});
 
 }); /* end of as page load scripts */
