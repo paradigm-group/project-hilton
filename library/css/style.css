@@ -1408,7 +1408,7 @@ and more scalable.
   display: block; }
 
 .home-nav li a {
-  width: 219px;
+  width: 290px;
   height: 190px;
   text-transform: uppercase;
   color: #fff; }
@@ -1416,7 +1416,7 @@ and more scalable.
 .home-nav li a span {
   background-color: #9a031e;
   position: absolute;
-  width: 210px;
+  width: 280px;
   line-height: 2em;
   bottom: 0;
   left: 0;
