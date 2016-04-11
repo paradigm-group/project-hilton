@@ -1528,6 +1528,9 @@ POSTS & CONTENT STYLES
       content: "";
       display: table;
       clear: both; }
+    .news-ticker .home-ticker p {
+      font-size: .8em;
+      margin: 0; }
   .news-ticker .news-title {
     color: #fff;
     font-weight: 900;

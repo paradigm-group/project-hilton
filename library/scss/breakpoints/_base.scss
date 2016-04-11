@@ -628,6 +628,11 @@ POSTS & CONTENT STYLES
         @include clearfix;
         height:90px;
         margin:0 auto;
+
+        p {
+            font-size:.8em;
+            margin:0;
+        }
     }
 
     .news-title{
