@@ -1308,14 +1308,33 @@ and more scalable.
     .top-nav li ul.sub-menu,
     .top-nav li ul.children {
       display: none;
-      margin: 0 auto; }
+      background: #fff;
+      z-index: 8999;
+      position: absolute;
+      width: 220px;
+      padding: 20px 20px 20px 0;
+      border-bottom-left-radius: 1em;
+      border-bottom-right-radius: 1em;
+      border-bottom: 2px solid #e2e2e2;
+      border-left: 2px solid #e2e2e2;
+      border-right: 2px solid #e2e2e2; }
       .top-nav li ul.sub-menu li,
       .top-nav li ul.children li {
-        width: 100%; }
+        float: left;
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0;
+        padding: 0; }
         .top-nav li ul.sub-menu li a,
         .top-nav li ul.children li a {
-          background-color: #f8f9fa;
-          color: #016c91; }
+          padding: 7px 5px 7px 22px;
+          border-right: 0;
+          display: block;
+          width: 220px;
+          float: left;
+          color: #000;
+          text-shadow: none;
+          list-style-type: disc; }
 
 /* end .top-nav */
 .mobile-nav {
