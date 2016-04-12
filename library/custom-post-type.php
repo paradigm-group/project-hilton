@@ -116,6 +116,7 @@ function cptui_register_my_cpts() {
 		"show_in_rest" => false,
 		"rest_base" => "",
 		"has_archive" => true,
+        "show_in_nav_menus" => true,
 		"show_in_menu" => true,
 		"exclude_from_search" => false,
 		"capability_type" => "post",

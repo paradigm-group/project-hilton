@@ -34,7 +34,7 @@
                                 </a>
                           </h1>
 
-                            <p class="byline vcard">Posted <?php echo get_the_time(get_option('date_format'));?> by <?php echo get_the_author_meta( 'display_name' );?></p>
+                            <p class="byline vcard">Posted <?php echo get_the_time(get_option('date_format'));?></p>
                         </header>
 
                         <div class="entry-content">
