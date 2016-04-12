@@ -28,11 +28,11 @@
 
                         <header class="article-header">
 
-                            <h1 class="h2 entry-title">
+                            <h1 class="entry-title">
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                                   <?php the_title(); ?>
                                 </a>
-                          </h1>
+                            </h1>
 
                             <p class="byline vcard">Posted <?php echo get_the_time(get_option('date_format'));?></p>
                         </header>
