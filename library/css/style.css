@@ -1203,13 +1203,13 @@ style a page via class
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #6b0f1a;
+  color: #910010;
   text-decoration: none;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #430910;
+    color: #63000b;
     text-decoration: underline; }
   a:link, a:visited:link {
     /*
@@ -1400,7 +1400,7 @@ and more scalable.
   margin-bottom: 1em;
   background-color: #fff;
   border-radius: 1em;
-  border: 5px solid #6b0f1a;
+  border: 5px solid #910010;
   box-shadow: 0 0 15px #000; }
 
 .menu-image {
@@ -1542,7 +1542,7 @@ POSTS & CONTENT STYLES
 
 .news-ticker {
   color: #fff;
-  background-color: #6b0f1a;
+  background-color: #910010;
   margin: 1em 0;
   padding: 1em;
   border-radius: 1em;
@@ -1938,7 +1938,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #6b0f1a;
+  background-color: #910010;
   color: #f8f9fa; }
 
 /*
