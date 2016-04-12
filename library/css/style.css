@@ -889,7 +889,7 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: #000807;
+  color: #000;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
@@ -1156,7 +1156,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #000807;
+  color: #000;
   background-color: #fff;
   -webkit-font-smoothing: antialiased; }
 
@@ -1203,13 +1203,13 @@ style a page via class
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #9a031e;
+  color: #6b0f1a;
   text-decoration: none;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #6d0215;
+    color: #430910;
     text-decoration: underline; }
   a:link, a:visited:link {
     /*
@@ -1273,7 +1273,7 @@ and more scalable.
 */
 .top-nav {
   margin: 0;
-  border: 2px solid #4d5057;
+  border: 2px solid #59656f;
   background: #acb9c8;
   background: -moz-linear-gradient(top, #acb9c8 0, #99a5b5 50%, #8c9aaa 51%, #8a9aab 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0, #acb9c8), color-stop(50%, #99a5b5), color-stop(51%, #8c9aaa), color-stop(100%, #8a9aab));
@@ -1343,7 +1343,7 @@ and more scalable.
   left: 0;
   bottom: 0;
   margin: 0;
-  background-color: #000807;
+  background-color: #000;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -1400,7 +1400,7 @@ and more scalable.
   margin-bottom: 1em;
   background-color: #fff;
   border-radius: 1em;
-  border: 5px solid #9a031e;
+  border: 5px solid #6b0f1a;
   box-shadow: 0 0 15px #000; }
 
 .menu-image {
@@ -1512,7 +1512,7 @@ POSTS & CONTENT STYLES
     max-width: 100%;
     height: auto; }
   .entry-content pre {
-    background: #000807;
+    background: #000;
     color: #f8f9fa;
     font-size: 0.9em;
     padding: 1.5em;
@@ -1542,11 +1542,11 @@ POSTS & CONTENT STYLES
 
 .news-ticker {
   color: #fff;
-  background-color: #9a031e;
+  background-color: #6b0f1a;
   margin: 1em 0;
   padding: 1em;
   border-radius: 1em;
-  border: 5px solid #dbd8f1;
+  border: 5px solid #828a95;
   text-align: center; }
   .news-ticker .home-ticker {
     height: 90px;
@@ -1584,7 +1584,7 @@ POSTS & CONTENT STYLES
     .subpages li .subpage-title span {
       width: 230px;
       padding: 5px 10px;
-      background: #000807;
+      background: #000;
       position: absolute;
       bottom: 0;
       z-index: 10;
@@ -1713,10 +1713,10 @@ PAGE NAVI STYLES
       color: #fff; }
   .pagination .current {
     cursor: default;
-    color: #000807; }
+    color: #000; }
     .pagination .current:hover, .pagination .current:focus {
       background-color: #fff;
-      color: #000807; }
+      color: #000; }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
@@ -1855,7 +1855,7 @@ COMMENT STYLES
     max-width: 100%;
     height: auto; }
   .comment_content pre {
-    background: #000807;
+    background: #000;
     color: #f8f9fa;
     font-size: 0.9em;
     padding: 1.5em;
@@ -1890,7 +1890,7 @@ COMMENT FORM STYLES
   font-style: italic;
   margin: 0; }
   .logged-in-as a {
-    color: #000807; }
+    color: #000; }
 
 .comment-form-comment {
   margin: 1.5em 0 0.75em; }
@@ -1938,7 +1938,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #9a031e;
+  background-color: #6b0f1a;
   color: #f8f9fa; }
 
 /*
@@ -2065,7 +2065,7 @@ NAVIGATION STYLES
     /* highlight current page */
     /* end current highlighters */ }
     .nav ul {
-      background: #000807;
+      background: #000;
       margin-top: 0; }
     .nav li {
       float: left;
