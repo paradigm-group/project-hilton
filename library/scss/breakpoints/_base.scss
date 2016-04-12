@@ -420,44 +420,49 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {}
-		.hentry {
 
-			header {}
+    .hentry {
 
-			footer {
+        header {}
 
-				p {
-					margin: 0;
-				}
-			}
+        footer {
 
-		} /* end .hentry */
-
-		.single-title,
-		.page-title,
-		.entry-title {
-			margin: 0;
-		}
-
-		.single-title {}
-
-		.page-title {}
-
-		.entry-title {
-            font-size: 1.75em;
+            p {
+                margin: 0;
+            }
         }
 
-		.archive-title {}
+    } /* end .hentry */
 
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
+    .single-title,
+    .page-title,
+    .entry-title {
+        margin: 0;
+    }
+
+    .single-title {}
+
+    .page-title {}
+
+    .entry-title {
+
+    }
+
+    .archive-title {}
+
+    .archive-sub {
+        font-size: 1.75em;
+    }
+
+    /* want to style individual post classes? Booya! */
+    .post-id {}         /* post by id (i.e. post-3) */
+    .post {}            /* general post style */
+    .page {}            /* general article on a page style */
+    .attachment {}      /* general style on an attatchment */
+    .sticky {}          /* sticky post style */
+    .hentry {}          /* hentry class */
+    .category-slug {}   /* style by category (i.e. category-videos) */
+    .tag-slug {}        /* style by tag (i.e. tag-news) */
 
 		/* post meta */
 		.byline {

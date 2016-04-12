@@ -28,7 +28,7 @@
 
                         <header class="article-header">
 
-                            <h1 class="entry-title">
+                            <h1 class="entry-title archive-sub">
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
                                   <?php the_title(); ?>
                                 </a>
