@@ -11,7 +11,7 @@
 
     if(is_array($pages) && !empty($pages)) {
 
-        $subpagel .= '<ul class="subpages">';
+        $xhtml .= '<ul class="subpages">';
         $incr=1;
 
         foreach($pages as $subpage) {
