@@ -694,19 +694,19 @@ Stylesheet: Layout Stylesheet
   .full:last-child {
     margin-right: 0; }
 
-#main, .main {
+.main {
   float: left;
   width: 74.5%;
   margin-right: 2%; }
-  #main:last-child, .main:last-child {
+  .main:last-child {
     margin-right: 0; }
   @media only screen and (max-width: 767px) {
-    #main, .main {
+    .main {
       width: 100%;
       margin: 1%;
       margin-left: 0; } }
   @media only screen and (max-width: 480px) {
-    #main, .main {
+    .main {
       width: 100%;
       margin: 1%; } }
 
@@ -1427,9 +1427,6 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-.hentry header {
-  padding: 1.5em; }
-
 .hentry footer p {
   margin: 0; }
 

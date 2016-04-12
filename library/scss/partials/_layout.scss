@@ -44,7 +44,7 @@ Stylesheet: Layout Stylesheet
         @include grid (12);
       }
 
-      #main, .main {
+    .main {
         @include grid(9);
         @include break(tablet, 12);
         @include break(mobile, 12);
