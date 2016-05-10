@@ -1391,7 +1391,9 @@ and more scalable.
 
 /* end .mobile-nav */
 .home-nav {
-  display: flex; }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .home-nav li {
   position: relative;
