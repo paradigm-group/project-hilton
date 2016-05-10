@@ -38,8 +38,6 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
-
-
 .nav {
 
     ul {
@@ -127,12 +125,16 @@ NAVIGATION STYLES
 
 } /* end .nav */
 
+.home-nav li {
+    width: 30%;
+}
+
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {
-}
+.sidebar {}
 
 	.widgettitle {
 		border-bottom: 2px solid #444;

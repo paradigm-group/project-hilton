@@ -170,9 +170,6 @@ POSTS & CONTENT STYLES
   display: block;
   clear: both; }
 
-.home-nav li {
-  width: 30%; }
-
 /*********************
 FOOTER STYLES
 *********************/
@@ -250,6 +247,9 @@ NAVIGATION STYLES
       top: auto; }
 
 /* end .nav */
+.home-nav li {
+  width: 30%; }
+
 /*********************
 SIDEBARS & ASIDES
 *********************/

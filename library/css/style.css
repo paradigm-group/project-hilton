@@ -2019,8 +2019,6 @@ POSTS & CONTENT STYLES
     margin-left: auto;
     display: block;
     clear: both; }
-  .home-nav li {
-    width: 30%; }
   /*********************
 FOOTER STYLES
 *********************/
@@ -2105,6 +2103,8 @@ NAVIGATION STYLES
       .nav li:hover > ul {
         top: auto; }
   /* end .nav */
+  .home-nav li {
+    width: 30%; }
   /*********************
 SIDEBARS & ASIDES
 *********************/
