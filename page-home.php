@@ -21,16 +21,16 @@
 
             <div class="main"  role="main">
 
-                <div class="news-ticker">
-                    <?php $loop = new WP_Query( array( 'post_type' => 'group-news', 'posts_per_page' => 2 ) ); ?>
-                    <?php if($loop->have_posts()): ?>
+                <!-- <div class="news-ticker">
+                    <?php // $loop = new WP_Query( array( 'post_type' => 'group-news', 'posts_per_page' => 2 ) ); ?>
+                    <?php //if($loop->have_posts()): ?>
                     <ul class="home-ticker">
-                        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                            <li><a class="news-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="date"><?php the_date(); ?></span><?php the_excerpt(); ?></li>
-                        <?php endwhile; ?>
+                        <?php //while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                            <li><a class="news-title" href="<?php //the_permalink(); ?>"><?php //the_title(); ?></a> <span class="date"><?php // the_date(); ?></span><?php // the_excerpt(); ?></li>
+                        <?php // endwhile; ?>
                     </ul>
-                    <?php endif; ?>
-                </div>
+                    <?php // endif; ?>
+                </div> -->
 
                 <div class="portal">
                     <?php wp_nav_menu(array(
@@ -49,21 +49,8 @@
                 </div>
             </div>
             <div class="sidebar">
-                <a href="/pulse">
-                    <img src="<?php echo get_template_directory_uri();?>/library/images/pulse.png" width="250" class="aligncenter">
-                </a>
-                <div class="beat">
-                    <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 3 ) ); ?>
-                    <?php if($loop->have_posts()): ?>
-                        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                            <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="beat-date"><?php the_date(); ?></span></h2>
-                            <div class="beat-excerpt"><?php the_excerpt(); ?></div>
-                        <?php endwhile; ?>
-
-                    <?php else : ?>
-                        <h2 class="beat-title soon">Coming soon!</h2>
-                    <?php endif; ?>
-                </div>
+                <a class="twitter-timeline" href="https://twitter.com/ParadigmPtns" data-widget-id="448783394185306112">Tweets by @ParadigmPtns</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
         </div>
     </div>
