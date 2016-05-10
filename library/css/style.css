@@ -1393,7 +1393,7 @@ and more scalable.
 .home-nav li {
   position: relative;
   display: inline-block;
-  width: 30%;
+  width: 50%;
   height: 190px;
   font-weight: 700;
   margin-right: 1em;
@@ -1401,7 +1401,7 @@ and more scalable.
   background-color: #fff;
   border: 5px solid #c90016;
   box-shadow: 0 0 5px #000;
-  min-width: 160px !important; }
+  min-width: 190px !important; }
 
 .menu-image {
   margin: .25em auto 1.25em;
@@ -1959,8 +1959,8 @@ tweeners.
 *********************/
 @media only screen and (min-width: 481px) {
   /******************************************************************
-Site Name:
-Author:
+Site Name: Project Hilton
+Author: Jack Machin
 
 Stylesheet: 481px and Up Stylesheet
 
@@ -2019,6 +2019,8 @@ POSTS & CONTENT STYLES
     margin-left: auto;
     display: block;
     clear: both; }
+  .home-nav li {
+    width: 30%; }
   /*********************
 FOOTER STYLES
 *********************/
