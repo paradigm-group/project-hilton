@@ -2108,6 +2108,8 @@ NAVIGATION STYLES
       .nav li:hover > ul {
         top: auto; }
   /* end .nav */
+  .home-nav li {
+    width: 30%; }
   /*********************
 SIDEBARS & ASIDES
 *********************/
