@@ -378,6 +378,12 @@ nav {
 
 } /* end .mobile-nav */
 
+.home-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .home-nav li {
     position: relative;
     display: inline-block;

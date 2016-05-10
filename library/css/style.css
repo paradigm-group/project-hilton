@@ -1390,6 +1390,9 @@ and more scalable.
     clear: both; }
 
 /* end .mobile-nav */
+.home-nav {
+  display: flex; }
+
 .home-nav li {
   position: relative;
   display: inline-block;
@@ -2103,8 +2106,6 @@ NAVIGATION STYLES
       .nav li:hover > ul {
         top: auto; }
   /* end .nav */
-  .home-nav li {
-    width: 30%; }
   /*********************
 SIDEBARS & ASIDES
 *********************/
