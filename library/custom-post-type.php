@@ -47,7 +47,7 @@ function cptui_register_my_cpts() {
 		"rewrite" => array( "slug" => "specialists", "with_front" => true ),
 		"query_var" => true,
 		"supports" => array( "title", "thumbnail" ),
-        "menu_icon" => 'dashicons-video-alt',
+        "menu_icon" => 'dashicons-id-alt',
 	);
 	register_post_type( "specialists", $args );
 
