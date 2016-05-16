@@ -469,8 +469,8 @@ http://sachagreif.com/sass-color-variables/
 */
 /* BG COLOUR VARIABLES */
 /******************************************************************
-Site Name:
-Author:
+Site Name: Project Hilton
+Author: Jack Machin
 
 Stylesheet: Typography
 
@@ -1153,7 +1153,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #000;
