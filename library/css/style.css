@@ -1286,12 +1286,8 @@ h5 {
 /*********************
 HEADER STYLES
 *********************/
-.header {
-  background-color: #fff; }
-
 .logo {
-  font-size: 18px;
-  margin: 20px 12px; }
+  font-size: 2.5em; }
 
 /*********************
 NAVIGATION STYLES
