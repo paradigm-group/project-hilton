@@ -99,7 +99,11 @@ a, a:visited {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1,
+h2,
+h3,
+h4,
+h5  {
 	text-rendering: optimizelegibility;
 	font-weight: 700;
 	/*
@@ -144,10 +148,12 @@ h5 {
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+    background-color:#fff;
+}
 
 	.logo {
-	   font-size:2.5em;
+	   font-size:18px;
 
 		a {}
 	}
@@ -164,10 +170,7 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
-nav {
-
-
-}
+nav {}
 
 .top-nav {
     margin:0;
