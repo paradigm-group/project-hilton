@@ -48,15 +48,10 @@
                     <?php // if you'd like to use the site description you can un-comment it below ?>
                     <?php // bloginfo('description'); ?>
                 </div>
-                <div class="search-container">
-                    <?php get_search_form( $echo );?>
-                </div>
 
             </div>
 
-        </header>
-
-            <nav role="navigation" class="wrapper">
+                        <nav role="navigation" class="wrapper">
 
                 <?php wp_nav_menu(array(
                     'container' => 'div',                           // remove nav container
@@ -73,3 +68,4 @@
                 )); ?>
 
             </nav>
+        </header>

@@ -639,8 +639,7 @@ Author: Jack Machin
 Stylesheet: Layout Stylesheet
 ******************************************************************/
 .wrapper {
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: 1240px;
   margin-right: auto;
   margin-left: auto; }
   .wrapper:after {
