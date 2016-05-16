@@ -48,7 +48,7 @@
                     <?php // if you'd like to use the site description you can un-comment it below ?>
                     <?php // bloginfo('description'); ?>
                 </div>
-                <?php get_sidebar ('header');?>
+                <?php get_search_form( $echo );?>
             </div>
 
         </header>
