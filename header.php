@@ -49,7 +49,7 @@
                     <?php // bloginfo('description'); ?>
                 </div>
                 <div class="search-container">
-                <?php get_search_form( $echo );?>
+                    <?php get_search_form( $echo );?>
                 </div>
 
             </div>
