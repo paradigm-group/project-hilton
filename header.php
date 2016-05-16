@@ -49,9 +49,11 @@
                     <?php // bloginfo('description'); ?>
                 </div>
 
+                <?php get_sidebar ('header');?>
+
             </div>
 
-                        <nav role="navigation" class="wrapper">
+            <nav role="navigation" class="wrapper">
 
                 <?php wp_nav_menu(array(
                     'container' => 'div',                           // remove nav container
