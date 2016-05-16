@@ -51,6 +51,8 @@
                 <?php get_sidebar ('header');?>
             </div>
 
+        </header>
+
             <nav role="navigation" class="wrapper">
 
                 <?php wp_nav_menu(array(
@@ -68,5 +70,3 @@
                 )); ?>
 
             </nav>
-
-        </header>
