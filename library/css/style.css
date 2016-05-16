@@ -844,7 +844,6 @@ and it will create a button dependant on those variables.
   .blue-btn:active, .comment-reply-link:active, #submit:active {
     background-color: #015978; }
 
-.searchform,
 #s {
   width: 200px;
   padding: 5px 15px;
@@ -1296,7 +1295,8 @@ HEADER STYLES
   background-color: #fff; }
 
 .logo {
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 20px 12px; }
 
 /*********************
 NAVIGATION STYLES
