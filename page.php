@@ -27,6 +27,8 @@
 
                     <footer class="article-footer">
 
+                        <?php get_template_part ('comments');?>
+
                         <?php get_template_part ('partials/subpages');?>
 
                     </footer> <?php // end article footer ?>
