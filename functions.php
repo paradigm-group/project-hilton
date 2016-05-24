@@ -203,7 +203,7 @@ function bones_comments( $comment, $args, $depth ) {
 function my_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>'/library/images/login-logo.png);
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/library/images/login-logo.png');
             padding-bottom: 30px;
         }
     </style>
