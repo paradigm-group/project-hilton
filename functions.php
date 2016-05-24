@@ -206,6 +206,7 @@ function my_login_logo() { ?>
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/library/images/login-logo.png);
             padding-bottom: 30px;
             background-size:320px;
+            width:320px;
         }
     </style>
 <?php }
