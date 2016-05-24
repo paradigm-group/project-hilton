@@ -1986,6 +1986,9 @@ FOOTER STYLES
 	view.
 	*/
 /* end .footer-links */
+.login .message {
+  border-left: 4px solid #c90016; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
