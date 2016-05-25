@@ -20,7 +20,7 @@
         <div id="inner-content" class="container">
 
             <div class="main" role="main">
-                <h1 class="page-title entry-title">New User Registration</h1>
+                <h1 class="page-title single-title">New User Registration</h1>
                 <div class="entry-content">
                     <?php gravity_form( 1, false, false, false, '', false );?>
                 </div>
