@@ -48,9 +48,9 @@ textarea,
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
-  border: 0;
+  border: 1px solid;
   width: 100%;
-    background-color:#f7f8fa;
+
 
   // a focused input (or hovered on)
   &:focus,

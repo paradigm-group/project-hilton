@@ -907,9 +907,8 @@ textarea,
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
-  border: 0;
-  width: 100%;
-  background-color: #f7f8fa; }
+  border: 1px solid;
+  width: 100%; }
   input[type="text"]:focus, input[type="text"]:active,
   input[type="password"]:focus,
   input[type="password"]:active,
