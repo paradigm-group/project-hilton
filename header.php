@@ -49,13 +49,13 @@
                     <?php // bloginfo('description'); ?>
                 </div>
 
-                <?php if (! is_page_template ('page-registration')) { ?>
+                <?php if (! is_page_template ('page-registration.php')) { ?>
 
                     <?php get_sidebar ('header');?>
                 <?php  } ?>
             </div>
 
-            <?php if (! is_page_template ('page-registration')) { ?>
+            <?php if (! is_page_template ('page-registration.php')) { ?>
 
             <nav role="navigation" class="wrapper">
 
