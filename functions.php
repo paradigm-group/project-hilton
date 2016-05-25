@@ -212,37 +212,4 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-//1. Add a new form element...
-add_action( 'register_form', 'myplugin_register_form' );
-function myplugin_register_form() {
-
-    $firm_name = ( ! empty( $_POST['firm_name'] ) ) ? trim( $_POST['firm_name'] ) : '';
-
-        ?>
-        <p>
-            <label for="first_name"><?php _e( 'Firm', 'mydomain' ) ?><br />
-                <input type="text" name="firm_name" id="firm_name" class="input" value="<?php echo esc_attr( wp_unslash( $first_name ) ); ?>" size="25" /></label>
-        </p>
-        <?php
-    }
-
-    //2. Add validation. In this case, we make sure first_name is required.
-    add_filter( 'registration_errors', 'myplugin_registration_errors', 10, 3 );
-    function myplugin_registration_errors( $errors, $sanitized_user_login, $user_email ) {
-
-        if ( empty( $_POST['firm_name'] ) || ! empty( $_POST['firm_name'] ) && trim( $_POST['first_name'] ) == '' ) {
-            $errors->add( 'firm_name_error', __( '<strong>ERROR</strong>: You must include a firm name.', 'mydomain' ) );
-        }
-
-        return $errors;
-    }
-
-    //3. Finally, save our extra registration user meta.
-    add_action( 'user_register', 'myplugin_user_register' );
-    function myplugin_user_register( $user_id ) {
-        if ( ! empty( $_POST['firm_name'] ) ) {
-            update_user_meta( $user_id, 'firm_name', trim( $_POST['firm_name'] ) );
-        }
-    }
-
 /* DON'T DELETE THIS CLOSING TAG */ ?>
