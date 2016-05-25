@@ -20,7 +20,7 @@
         <div id="inner-content" class="container">
 
             <div class="main" role="main">
-                <h1 class="page-title">Restricted Access</h1>
+                <h1 class="page-title entry-title">Restricted Access</h1>
                 <div class="entry-content login-box">
                     <p>To access this content, please login via this form:</p>
 
@@ -28,7 +28,7 @@
                 </div>
                 <div class="entry-content login-box">
 
-                    <p>If you do not already have a login for the Hilton site, please register below:</p>
+                    <p>If you do not already have a login please register below:</p>
 
                     <?php gravity_form( 1, false, false, false, '', false );?>
                 </div>
