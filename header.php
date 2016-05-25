@@ -49,13 +49,13 @@
                     <?php // bloginfo('description'); ?>
                 </div>
 
-                <?php if (! is_page ('restricted')) { ?>
+                <?php if (! is_page ('restricted-access')) { ?>
 
                     <?php get_sidebar ('header');?>
                 <?php  } ?>
             </div>
 
-            <?php if (! is_page ('restricted')) { ?>
+            <?php if (! is_page ('restricted-access')) { ?>
 
             <nav role="navigation" class="wrapper">
 
