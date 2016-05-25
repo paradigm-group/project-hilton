@@ -49,9 +49,13 @@
                     <?php // bloginfo('description'); ?>
                 </div>
 
-                <?php get_sidebar ('header');?>
+                <?php if (!is_page_template ('page-registration')) { ?>
 
+                    <?php get_sidebar ('header');?>
+                <?php  } ?>
             </div>
+
+            <?php if (!is_page_template ('page-registration')) { ?>
 
             <nav role="navigation" class="wrapper">
 
@@ -70,4 +74,6 @@
                 )); ?>
 
             </nav>
+
+            <?php } ?>
         </header>
