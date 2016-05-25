@@ -212,7 +212,7 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-function members_please_log_in() {
+function hilton_please_log_in() {
 	// Check if the private blog feature is active and if the user is not logged in.
 	if (! is_user_logged_in() && ! is_page ('user-registration') ) {
 		// If using BuddyPress and on the register page, don't do anything.
@@ -223,6 +223,5 @@ function members_please_log_in() {
 		exit;
 	}
 }
-
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
