@@ -92,7 +92,8 @@ body {
   margin-top: 1.5em; }
 
 #wpadminbar,
-li + li {
+li + li,
+span + span {
   margin-top: 0; }
 
 /* ==========================================================================
