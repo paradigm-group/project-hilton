@@ -1970,6 +1970,10 @@ COMMENT FORM STYLES
 .nocomments {
   margin: 0 20px 1.1em; }
 
+.login-box {
+  border: 5px solid #c90016;
+  padding: 1.5em; }
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
