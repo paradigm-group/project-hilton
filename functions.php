@@ -219,7 +219,7 @@ function hilton_please_log_in() {
 		if ( function_exists( 'bp_is_current_component' ) && bp_is_current_component( 'register' ) )
 			return;
 		// Redirect to the login page.
-		wp_redirect('www.project-hilton.com/restricted-access');
+		wp_redirect('www.project-hilton.com/restricted');
 		exit;
 	}
 }
