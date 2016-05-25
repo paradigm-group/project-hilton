@@ -212,4 +212,17 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
+function members_please_log_in() {
+	// Check if the private blog feature is active and if the user is not logged in.
+	if (! is_user_logged_in() && ! is_page ('user-registration') ) {
+		// If using BuddyPress and on the register page, don't do anything.
+		if ( function_exists( 'bp_is_current_component' ) && bp_is_current_component( 'register' ) )
+			return;
+		// Redirect to the login page.
+		wp_redirect('www.project-hilton.com/user-registration');
+		exit;
+	}
+}
+
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
