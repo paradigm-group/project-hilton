@@ -726,6 +726,22 @@ Stylesheet: Layout Stylesheet
       width: 100%;
       margin: 1%; } }
 
+.login-box {
+  float: left;
+  width: 49%;
+  margin-right: 2%; }
+  .login-box:last-child {
+    margin-right: 0; }
+  @media only screen and (max-width: 767px) {
+    .login-box {
+      width: 100%;
+      margin: 1%;
+      margin-left: 0; } }
+  @media only screen and (max-width: 480px) {
+    .login-box {
+      width: 100%;
+      margin: 1%; } }
+
 /******************************************************************
 Site Name:
 Author:

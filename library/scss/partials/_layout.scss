@@ -56,4 +56,10 @@ Stylesheet: Layout Stylesheet
         @include break(mobile, 12);
        }
 
+.login-box {
+        @include grid(6);
+        @include break(tablet, 12);
+        @include break(mobile, 12);
+}
+
   .footer {}

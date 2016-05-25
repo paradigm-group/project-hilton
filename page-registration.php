@@ -21,10 +21,12 @@
 
             <div class="main" role="main">
                 <h1 class="page-title">Restricted Access</h1>
-                <div class="entry-content">
+                <div class="entry-content login-box">
                     <p>To access this content, please login via this form:</p>
 
                     <?php wp_login_form(); ?>
+                </div>
+                <div class="entry-content login-box">
 
                     <p>If you do not already have a login for the Hilton site, please register below:</p>
 
