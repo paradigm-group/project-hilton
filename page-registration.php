@@ -22,12 +22,13 @@
             <div class="main" role="main">
                 <h1 class="page-title entry-title">Restricted Access</h1>
                 <div class="entry-content login-box">
+                    <h2>Login</h2>
                     <p>To access this content, please login via this form:</p>
 
                     <?php wp_login_form(); ?>
                 </div>
                 <div class="entry-content login-box">
-
+                    <h2>Register</h2>
                     <p>If you do not already have a login please register below:</p>
 
                     <?php gravity_form( 1, false, false, false, '', false );?>
