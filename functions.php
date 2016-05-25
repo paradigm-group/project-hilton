@@ -224,4 +224,6 @@ function hilton_please_log_in() {
 	}
 }
 
+add_action( 'template_redirect', 'hilton_please_log_in' );
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
