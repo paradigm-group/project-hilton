@@ -212,24 +212,4 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-/* Overide members for User Registration page */
-
-if ( ! function_exists( 'members_please_log_in' ) ) {
-
-    function new_members_please_log_in() {
-
-        if ( ! is_page ('user-registration')) {
-        	// Check if the private blog feature is active and if the user is not logged in.
-            if ( members_is_private_blog() && ! is_user_logged_in()) {
-                // If using BuddyPress and on the register page, don't do anything.
-                if ( function_exists( 'bp_is_current_component' ) && bp_is_current_component( 'register' ) )
-                    return;
-                // Redirect to the login page.
-                auth_redirect();
-                exit;
-            }
-        }
-    }
-}
-
 /* DON'T DELETE THIS CLOSING TAG */ ?>
