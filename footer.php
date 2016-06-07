@@ -2,7 +2,7 @@
 
 				<div id="inner-footer" class="wrapper">
 
-                    <?php if(is_page_template('page-restrcited')) {} else { ?>
+                    <?php if(is_page_template('page-restrcited.php')) {} else { ?>
 
                         <nav role="navigation">
                             <?php wp_nav_menu(array(
