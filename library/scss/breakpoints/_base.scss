@@ -1358,11 +1358,13 @@ FOOTER STYLES
 	override these styles for the desktop
 	view.
 	*/
-	.footer-links {
+	.footer-nav {
 
 		ul {
 
-			li {}
+			li {
+                color:$white;
+            }
 
 		}
 

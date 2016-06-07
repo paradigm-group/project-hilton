@@ -2006,6 +2006,9 @@ FOOTER STYLES
 	override these styles for the desktop
 	view.
 	*/
+.footer-nav ul li {
+  color: #fff; }
+
 /* end .footer-links */
 .login .message {
   border-left: 4px solid #c90016; }
